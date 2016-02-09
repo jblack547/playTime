@@ -1,2 +1,5 @@
+CC=gcc
+CFLAGS=-I.
+
 buffer: buffer.c main.c
-	gcc -o buffer buffer.c main.c -I.
+	$(CC) -o buffer buffer.c main.c $(CFLAGS)
